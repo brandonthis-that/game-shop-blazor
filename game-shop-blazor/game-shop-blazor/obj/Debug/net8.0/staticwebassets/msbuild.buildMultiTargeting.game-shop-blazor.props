@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\game-shop-blazor.props" />
+</Project>

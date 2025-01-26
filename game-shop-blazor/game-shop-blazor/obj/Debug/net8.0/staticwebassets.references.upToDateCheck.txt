@@ -1,0 +1,2 @@
+C:\Users\brand\Documents\projects\game-shop-blazor\game-shop-blazor\game-shop-blazor.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\brand\Documents\projects\game-shop-blazor\game-shop-blazor\game-shop-blazor.Client\obj\Debug\net8.0\staticwebassets.build.json

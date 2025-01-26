@@ -1,0 +1,91 @@
+--CREATE TABLE Users (
+--    UserID INT IDENTITY(1,1) PRIMARY KEY,
+--    Username NVARCHAR(50) NOT NULL UNIQUE,
+--    Email NVARCHAR(100) NOT NULL UNIQUE,
+--    PasswordHash NVARCHAR(255) NOT NULL,
+--    Role NVARCHAR(20) DEFAULT 'User',
+--    DateCreated DATETIME DEFAULT GETDATE()
+--);
+
+--CREATE TABLE Games (
+--    GameID INT IDENTITY(1,1) PRIMARY KEY,
+--    Title NVARCHAR(100) NOT NULL,
+--    Description NVARCHAR(MAX),
+--    Price DECIMAL(10, 2) NOT NULL,
+--    Stock INT NOT NULL DEFAULT 0,
+--    ImageUrl NVARCHAR(255),
+--    ReleaseDate DATE
+--);
+
+--CREATE TABLE Orders (
+--    OrderID INT IDENTITY(1,1) PRIMARY KEY,
+--    UserID INT NOT NULL,
+--    OrderDate DATETIME DEFAULT GETDATE(),
+--    TotalAmount DECIMAL(10, 2) NOT NULL,
+--    Status NVARCHAR(20) DEFAULT 'Pending',
+--    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+--);
+
+--CREATE TABLE OrderDetails (
+--    OrderDetailID INT IDENTITY(1,1) PRIMARY KEY,
+--    OrderID INT NOT NULL,
+--    GameID INT NOT NULL,
+--    Quantity INT NOT NULL,
+--    Price DECIMAL(10, 2) NOT NULL,
+--    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+--    FOREIGN KEY (GameID) REFERENCES Games(GameID)
+--);
+
+--CREATE TABLE Cart (
+--    CartID INT IDENTITY(1,1) PRIMARY KEY,
+--    UserID INT NOT NULL,
+--    GameID INT NOT NULL,
+--    Quantity INT NOT NULL,
+--    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+--    FOREIGN KEY (GameID) REFERENCES Games(GameID)
+--);
+
+--CREATE TABLE Reviews (
+--    ReviewID INT IDENTITY(1,1) PRIMARY KEY,
+--    UserID INT NOT NULL,
+--    GameID INT NOT NULL,
+--    Rating TINYINT NOT NULL CHECK (Rating BETWEEN 1 AND 5),
+--    Comment NVARCHAR(MAX),
+--    ReviewDate DATETIME DEFAULT GETDATE(),
+--    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+--    FOREIGN KEY (GameID) REFERENCES Games(GameID)
+--);
+
+--CREATE TABLE AdminLogs (
+--    LogID INT IDENTITY(1,1) PRIMARY KEY,
+--    AdminID INT NOT NULL,
+--    Action NVARCHAR(255) NOT NULL,
+--    Timestamp DATETIME DEFAULT GETDATE(),
+--    FOREIGN KEY (AdminID) REFERENCES Users(UserID)
+--);
+
+--ALTER TABLE Orders
+--ADD CONSTRAINT FK_Orders_Users
+--FOREIGN KEY (UserID) REFERENCES Users(UserID)
+--ON DELETE CASCADE;
+
+--ALTER TABLE OrderDetails
+--ADD CONSTRAINT FK_OrderDetails_Orders
+--FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+--ON DELETE CASCADE;
+
+--ALTER TABLE OrderDetails
+--ADD CONSTRAINT FK_OrderDetails_Games
+--FOREIGN KEY (GameID) REFERENCES Games(GameID)
+--ON DELETE NO ACTION;
+
+--ALTER TABLE Reviews
+--ADD CONSTRAINT FK_Reviews_Users
+--FOREIGN KEY (UserID) REFERENCES Users(UserID)
+--ON DELETE CASCADE;
+
+--ALTER TABLE Reviews
+--ADD CONSTRAINT FK_Reviews_Games
+--FOREIGN KEY (GameID) REFERENCES Games(GameID)
+--ON DELETE CASCADE;
+
