@@ -1,13 +1,28 @@
 ﻿@page "/"
 
-<PageTitle>GameSHOP</PageTitle>
+@inject AppDbContext DbContext
 
-<h1>sottin</h1>
+<h3>Create User</h3>
 
-<strong>Fuck it we ball</strong>
-
-You are signed in as @signedUser
+<input @bind="username" placeholder="Username" />
+<input @bind="email" placeholder="Email" />
+<button @onclick="CreateUser">Create User</button>
 
 @code{
-    string signedUser = "Brandon";
+    private string username;
+    private string email;
+    private async Task CreateUser()
+    {
+        var user = new User
+            {
+                Username = username,
+                Email = email,
+                PasswordHash = "hashed_password",
+                Role = "User",
+                DateCreated = DateTime.UtcNow
+            };
+        DbContext.Users.Add(user);
+        await DbContext.SaveChangesAsync();
+        Console.WriteLine("User created successfully");
+    }
 }
