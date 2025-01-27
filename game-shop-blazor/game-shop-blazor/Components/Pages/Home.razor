@@ -1,28 +1,6 @@
 ﻿@page "/"
 
 @inject AppDbContext DbContext
+@using game_shop_blazor.Shared
 
-<h3>Create User</h3>
-
-<input @bind="username" placeholder="Username" />
-<input @bind="email" placeholder="Email" />
-<button @onclick="CreateUser">Create User</button>
-
-@code{
-    private string username;
-    private string email;
-    private async Task CreateUser()
-    {
-        var user = new User
-            {
-                Username = username,
-                Email = email,
-                PasswordHash = "hashed_password",
-                Role = "User",
-                DateCreated = DateTime.UtcNow
-            };
-        DbContext.Users.Add(user);
-        await DbContext.SaveChangesAsync();
-        Console.WriteLine("User created successfully");
-    }
-}
+<Navbar />

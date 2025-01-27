@@ -5451,23 +5451,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brand\\.nuget\\packages\\": {},
+    "C:\\Users\\Brandon\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.csproj",
+      "projectUniqueName": "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.csproj",
       "projectName": "game-shop-blazor",
-      "projectPath": "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.csproj",
-      "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor\\obj\\",
+      "projectPath": "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.csproj",
+      "packagesPath": "C:\\Users\\Brandon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Brandon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5483,8 +5483,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj": {
-              "projectPath": "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj"
+            "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj": {
+              "projectPath": "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj"
             }
           }
         }

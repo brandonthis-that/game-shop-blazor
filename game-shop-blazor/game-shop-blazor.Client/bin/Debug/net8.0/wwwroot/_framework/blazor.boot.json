@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "game-shop-blazor.Client",
   "resources": {
-    "hash": "sha256-tJGUEtKV37GV3xfBaFovSlSVDBA3R0Z+Mtfy7ZuwX48=",
+    "hash": "sha256-Xz6RInyEw+mSJ8ZQX9cpkBqB034muD3mxO1XGjSZMeg=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-B6DNRvFeCUi3jbx9uKpuj+hV9cN0KG4RdZj1FgBZwj8="
     },
@@ -255,10 +255,10 @@
       "mscorlib.wasm": "sha256-QoC5hTKpDNO6efLnEvYwV9OJBXvYRq8/1yGhNZKiNCw=",
       "netstandard.wasm": "sha256-JT2F4bYWJpaSGq+iD0ITLpWxsDhMUjhqje9RpBtTg7w=",
       "System.Private.CoreLib.wasm": "sha256-fvIPBcvgvsRuWrKi2LGQsLYvcKUSnyIuBUsE3LJu/0Y=",
-      "game-shop-blazor.Client.wasm": "sha256-rUWy0hVrB2mqWBDm5fcjtU4RQV8NmNAm+X2LBStWkwA="
+      "game-shop-blazor.Client.wasm": "sha256-4IyxIiW1vWSsLvz6XV9NyEz5jlrqDa8himyogysRwog="
     },
     "pdb": {
-      "game-shop-blazor.Client.pdb": "sha256-fHXgqxgIAAi6vxTwpFzwWcuF1z1fOI5AZ8V2ydU8Mz4="
+      "game-shop-blazor.Client.pdb": "sha256-cEHW4abpR0PD6euSyTWhNOHCZZ65LRqNJdGthZr04DA="
     },
     "satelliteResources": {
       "cs": {

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj": {}
+    "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj": {
+    "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj",
         "projectName": "game-shop-blazor.Client",
-        "projectPath": "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj",
-        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\Documents\\projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\obj\\",
+        "projectPath": "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\game-shop-blazor.Client.csproj",
+        "packagesPath": "C:\\Users\\Brandon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brandon\\Documents\\Projects\\game-shop-blazor\\game-shop-blazor\\game-shop-blazor.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Brandon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

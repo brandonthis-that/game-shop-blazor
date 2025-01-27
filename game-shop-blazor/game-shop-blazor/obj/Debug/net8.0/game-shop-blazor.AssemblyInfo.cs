@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("game-shop-blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+877e8ebda0d9589febc2f964744219d6fcc38b64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ec960e54ceeaf3f258fdd9e01cf285eacc7cbe3")]
 [assembly: System.Reflection.AssemblyProductAttribute("game-shop-blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("game-shop-blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

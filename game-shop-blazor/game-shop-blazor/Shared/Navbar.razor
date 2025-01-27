@@ -1,0 +1,85 @@
+﻿<header>
+    <div class="navbar">
+        <div>
+            <a class="brand" href="index">GameSHOP</a>
+        </div>
+        <div class="navbar-right">
+            <div class="search-on-menu">
+                <img class="search-icon" src="assets/search-icon.svg" alt="search-icon-svg">
+                <input @bind="SearchText" class="search-box" type="text" placeholder="Search..." />
+            </div>
+            <div class="theme-toggle">
+                <button @onclick="ToggleTheme">@ThemeIcon</button>
+            </div>
+            <ul>
+                <li>
+                    <a href="Shop">Shop</a>
+                </li>
+            </ul>
+            <div class="account-icon-wrapper">
+                <img class="account-icon" src="assets/account-icon.svg" alt="account-icon-svg">
+            </div>
+        </div>
+    </div>
+</header>
+
+@code {
+    private string SearchText { get; set; } = string.Empty;
+    private string CurrentTheme { get; set; } = "light-mode"; // Default to light mode
+    private string ThemeIcon { get; set; } = "🌞";
+
+    protected override void OnInitialized()
+    {
+        // Check saved theme preference from local storage (requires JavaScript Interop)
+        var savedTheme = localStorage.GetItem("theme");
+        if (!string.IsNullOrEmpty(savedTheme))
+        {
+            CurrentTheme = savedTheme;
+            UpdateThemeIcon(savedTheme == "dark-mode");
+        }
+    }
+
+    private void ToggleTheme()
+    {
+        var isDarkMode = CurrentTheme == "dark-mode";
+        CurrentTheme = isDarkMode ? "light-mode" : "dark-mode";
+
+        // Save to local storage (requires JavaScript Interop)
+        localStorage.SetItem("theme", CurrentTheme);
+
+        UpdateThemeIcon(!isDarkMode);
+    }
+
+    private void UpdateThemeIcon(bool isDarkMode)
+    {
+        ThemeIcon = isDarkMode ? "🌜" : "🌞";
+
+        // Apply the theme to the body (requires JavaScript Interop)
+        bodyClass.SetClass(CurrentTheme);
+    }
+
+    // JavaScript Interop for interacting with the DOM
+    private class localStorage
+    {
+        [JSInvokable]
+        public static string GetItem(string key)
+        {
+            return JSRuntime.Current.InvokeAsync<string>("localStorage.getItem", key).Result;
+        }
+
+        [JSInvokable]
+        public static void SetItem(string key, string value)
+        {
+            JSRuntime.Current.InvokeVoidAsync("localStorage.setItem", key, value);
+        }
+    }
+
+    private class bodyClass
+    {
+        [JSInvokable]
+        public static void SetClass(string className)
+        {
+            JSRuntime.Current.InvokeVoidAsync("document.body.className", className);
+        }
+    }
+}
